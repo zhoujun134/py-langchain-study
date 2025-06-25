@@ -6,3 +6,10 @@ langchain-openai==0.3.25
 langsmith==0.3.45
 ollama==0.5.1
 openai==1.91.0
+
+langgraph~=0.4.9
+python-dotenv~=0.21.0
+mcp~=1.9.4
+colorlog~=6.9.0
+
+langchain~=0.3.26
