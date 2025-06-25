@@ -16,7 +16,7 @@ kModel = ZhiPuChatModel()
 conversation = ConversationChain(llm=kModel.llm, memory=memory, verbose=True)
 
 # 4. 进行对话
-print(conversation.invoke("我叫zhoujun，我喜欢蓝色请记住我的名字？"))
+print(f" sss {conversation.invoke("我叫zhoujun，我喜欢蓝色请记住我的名字？")}")
 print(conversation.invoke("还记得我叫什么名字吗？"))
 print(conversation.invoke("我最喜欢的颜色是什么"))
 
