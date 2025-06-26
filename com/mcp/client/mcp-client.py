@@ -19,7 +19,7 @@ async def main():
     client = MultiServerMCPClient({
         "math": {
             "command": "python",
-            "args": ["/Users/zj/IdeaProjects/zj/py-langchain-study/com/mcp/server/math_mcp_server.py"],
+            "args": ["../server/math_mcp_server.py"],
             "transport": "stdio"
         }
     })

@@ -33,29 +33,33 @@ mcp = FastMCP("math-compute-mcp")
 @mcp.tool()
 def add(a: float, b: float) -> float:
     """返回两个数之和"""
-    logger.info("add(%d, %d)", a, b)
-    return a + b
+    result = a + b
+    logger.info("sub(%s, %s): %s", a, b, result)
+    return result
 
 
 @mcp.tool()
 def sub(a: float, b: float) -> float:
     """返回两个数之差，a 减去 b 的值"""
-    logger.info("sub(%d, %d)", a, b)
-    return a * b
+    result = a - b
+    logger.info("sub(%s, %s): %s", a, b, result)
+    return result
 
 
 @mcp.tool()
 def multiply(a: float, b: float) -> float:
     """返回两个数之积"""
-    logger.info("multiply(%d, %d)", a, b)
-    return a * b
+    result = a * b
+    logger.info("multiply(%d, %d): %s", a, b, result)
+    return result
 
 
 @mcp.tool()
 def divide(a: float, b: float) -> float:
     """返回两个数的商，a 除以 b 的值， b 不等于 0 """
-    logger.info("divide(%d, %d)", a, b)
-    return a * b
+    result = a / b
+    logger.info("divide(%d, %d): %s", a, b, result)
+    return result
 
 
 if __name__ == "__main__":
